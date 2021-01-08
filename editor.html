@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
     <base href="">
-    <title>VvvebJs</title>
+    <title>Medoment - Report Designer</title>
     
     <link href="css/editor.css" rel="stylesheet">
     <link href="css/line-awesome.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 	<div id="vvveb-builder">
 				
 				<div id="top-panel">
-					<img src="img/logo.png" alt="Vvveb" class="float-left" id="logo">
+					<img src="img/logo.svg" alt="Medoment" class="float-left" id="logo">
 					
 					
 					<div class="btn-group float-left" role="group">
@@ -1100,7 +1100,7 @@ $(document).ready(function()
 		$(".component-properties-tab").hide();
 	}
 
-	Vvveb.Builder.init('demo/narrow-jumbotron/index.html', function() {
+	Vvveb.Builder.init('demo/invoice/1.html', function() {
 		//run code after page/iframe is loaded
 	});
 
@@ -1109,6 +1109,7 @@ $(document).ready(function()
 	Vvveb.Sections.init();
 	Vvveb.FileManager.addPages(
 	[
+		{name:"invoice-1", title:"Invoice 1",  url: "demo/invoice/1.html", file: "demo/invoice/1.html", assets: ['demo/invoice/1.css']},
 		{name:"narrow-jumbotron", title:"Jumbotron",  url: "demo/narrow-jumbotron/index.html", file: "demo/narrow-jumbotron/index.html", assets: ['demo/narrow-jumbotron/narrow-jumbotron.css']},
 		{name:"landing-page", title:"Landing page",  url: "demo/startbootstrap-landing-page/index.html", file: "demo/startbootstrap-landing-page/index.html", assets: ['demo/startbootstrap-landing-page/css/landing-page.min.css']},
 		{name:"album", title:"Album",  url: "demo/album/index.html", file: "demo/album/index.html", folder:"content", assets: ['demo/album/album.css']},
